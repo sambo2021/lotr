@@ -1,0 +1,10 @@
+1- creating a vpc with 2 public and private subnet in 2 different AZs
+2- create 2 security groups one for public subnets instances with inboud 22,80,443
+                        and one for private subnets instances with inbound 22,8080,3306
+3- create a public instance and install nginx to act as reverse proxy 
+4- create 2 private instances one for installing data base my sql and apply lotr.sql file and creating a user with password and has all permissions on all databases and can be accessed from any where outsid instnce 
+5- second instance to install that node js application with env variables like instance database private ip and username and pasword you created in mysql and finally the database name 
+   run the application as a service on ec2 instance linux system to make sure htat application always runing at ip:8080
+6- configure nginx proxy server to the location of app ec2 private ip : 8080 
+7- hit url using proxy server dns 
+  

@@ -116,3 +116,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+
+
+
+
+reverse-proxy-server.pem
+app.env
